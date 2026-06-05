@@ -27,7 +27,7 @@ jobs:
       run: |
         docker build \
         -t ${{ secrets.DOCKER_USERNAME }}/demo-app:${{ github.sha }} \
-        ./app
+        .
 
     - name: Push Docker Image
       run: |
